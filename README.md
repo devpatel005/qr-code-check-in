@@ -1,5 +1,6 @@
 # QR-code-check-in
-## A small project that can check in people using a QR code scanner from Expo in React Native. The app accesses the user's camera on their phone and is set to scan only QR codes. Another program (not included here) sends QR codes encoded with unique ID numbers, which the scanner picks up through the camera. The app then fetches a JSON file via API from a database containing all check-in info on the unique ID. The program then displays a modal with the information received from the API. This app contains four possible cases and covers each.
+## A small project that can check in people using a QR code scanner from Expo in React Native. The app accesses the user's camera on their phone and is set to scan only QR codes. Another program (not included here) sends QR codes encoded with unique ID numbers, which the scanner picks up through the camera. The app then fetches a JSON file via API from a database containing all check-in info on the unique ID. The program then displays a modal with the information received from the API. 
+### This app contains four possible cases and covers each.
 ### 1. The delegate (owner of a unique ID) does not exist. (API did not send any information back to the app).
 ### 2. The delegate is not registered. (API returned a nonregistered error code)
 ### 3. The delegate still needs to sign their liability form. (API returned not signed error code)
@@ -9,5 +10,4 @@
 
 ### This app was built using React Native for compatibility across all mobile devices and used Expo to generate builds for use. The main libraries used were Expo QR scanner and Axios (for API fetching).
 
-# Before Running...
-## Install all node and expo dependencies to run the app off a local server.
+# Before Running, install all node and expo dependencies to run the app off a local server.
