@@ -1,0 +1,62 @@
+{
+"expo": {
+"name": "QRCheckIn",
+"slug": "qr-code-reader",
+"version": "1.0.0",
+"orientation": "portrait",
+"icon": "./assets/icon.png",
+"userInterfaceStyle": "light",
+"plugins": [
+[
+"expo-barcode-scanner",
+{
+"cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+}
+]
+],
+"splash": {
+"image": "./assets/splash.png",
+"resizeMode": "contain",
+"backgroundColor": "#ffffff"
+},
+"assetBundlePatterns": [
+"**/*"
+],
+"ios": {
+"supportsTablet": true,
+"infoPlist": {
+"NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access camera.",
+"NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+},
+"bundleIdentifier": "com.southwestbkyevents.qrcodereader"
+},
+"android": {
+"adaptiveIcon": {
+"foregroundImage": "./assets/adaptive-icon.png",
+"backgroundColor": "#ffffff"
+},
+"permissions": [
+"android.permission.CAMERA"
+],
+"package": "com.southwestbkyevents.qrcodereader"
+},
+"web": {
+"favicon": "./assets/favicon.png"
+},
+"extra": {
+"eas": {
+"projectId": "48688f35-9266-43f6-bc60-76a24f17c4d2"
+}
+},
+"owner": "southwestbkyevents",
+"runtimeVersion": {
+"policy": "appVersion"
+},
+"updates": {
+"url": "https://u.expo.dev/48688f35-9266-43f6-bc60-76a24f17c4d2"
+}
+}
+}
+
+
+
